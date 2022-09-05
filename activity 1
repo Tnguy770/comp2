@@ -1,0 +1,76 @@
+package abc;
+
+//Activity 1.1 Timothy Nguyen
+
+public interface Bid {
+
+	
+	/**
+	 * sets the company's name 
+	 * @param name of the company
+	 */
+	
+	void SetComanyName(String compnay);
+	
+	/**
+	 * gets the company's name 
+	 * @param name of the company
+	 */
+	
+	String GetComanyName(String compnay);
+	
+	/**
+	 * gets the unit description
+	 * @return the unit's description
+	 */
+	
+	String GetDescription();
+	
+	/**
+	 * gets the cost of unit 
+	 * @return cost of the unit
+	 */
+	
+	int GetUnitCost();
+	
+	/**
+	 * gets the cost of installation
+	 * @return cost of installation
+	 */
+	
+	int GetInstallCost();
+	
+	/**
+	 * Sets unit bid price
+	 */
+	
+	int GetBidPrice();
+	
+	/**
+	 * Decreases Bid value by specified price
+	 * 
+	 */
+	
+	void DecreasedPrice(double price);
+	
+	/**
+	 * Increases Bid value by specified price
+	 * 
+	 */
+	
+	void IncreasedPrice(double price);
+	
+	/**
+	 * Places a bid
+	 * 
+	 */
+	
+	void placeBid();
+	
+	/**
+	 * Sets the Ac unit being used in the bid
+	 * 
+	 */
+	
+	void SetAmount(int numUnit);
+}
